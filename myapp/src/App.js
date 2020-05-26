@@ -2,6 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 import Form from './components/form';
 
+const StyledApp = styled.div`
+    color: #ffe8e7;
+    background: #E96D65;
+    padding: 10px;
+    min-height: 100vh;
+`;
+
 const Main = styled.main`
   min-height: 100vh;
   display: flex;
@@ -12,14 +19,16 @@ const Main = styled.main`
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">Giya</header>
+    <StyledApp>
+      <header>
+        <img src="" alt="Giya Logo"/>
+      </header>
       <Main role="main">
         <Form />
       </Main>
       <footer>
       </footer>
-    </div>
+    </StyledApp>
   );
 }
 
